@@ -6,10 +6,10 @@ theme = "recipes_theme"
 [deployment]
 [[deployment.targets]]
 name = "aws_s3_deployment"
-URL = "s3://recipes.timharding.co?region=us-west-2"
+URL = "gs://recipes-timharding-co"
 
 [[deployment.matchers]]
-# Cache static assets for 1 year.
+# Cache static assets for 100 minutes
 pattern = "^.+\\.(js|css|svg|ttf)$"
 cacheControl = "max-age=6000, no-transform, public"
 gzip = true
